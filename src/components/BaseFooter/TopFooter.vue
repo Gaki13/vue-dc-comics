@@ -1,5 +1,5 @@
 <template>
-    <footer >
+    <footer class="top-footer">
         <div class="container-small">
             <ul class="footer-ul" >
                 <li><img src="../../assets/img/buy-comics-digital-comics.png" alt=""><a href="#">Digitals Comics</a></li>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-    footer{
+    .top-footer{
         height: 25rem;
         background-color: var(--primary-color);
         display: flex;

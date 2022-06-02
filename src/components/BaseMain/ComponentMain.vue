@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="container">
-            <h1> -->Content Goes Here</h1>
+            <h1 class="container-h1"> -->Content Goes Here</h1>
         </div>
     </main>
 </template>
@@ -17,7 +17,7 @@ export default {
         background-color: var(--secondary-color);
         height: 20rem;
         color: white;
-    }h1{
+    }.container-h1{
         line-height: 20rem;
     }
 </style>

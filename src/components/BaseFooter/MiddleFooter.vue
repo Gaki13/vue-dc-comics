@@ -78,6 +78,7 @@ export default {
         height: 40rem;
         gap: 3rem;
         align-items: flex-start;
+        font-size:  1.15rem;
     }
     .col-ul{
         list-style: none;

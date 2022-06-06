@@ -17,7 +17,12 @@ export default {
 
 <style lang="scss" scoped>
     .card{
-        width: calc(100% / 6 - 20px);
+        img{
+            width: 100%;
+            height: 246px;
+            object-fit: cover;
+            object-position: top;
+        }
         h3{
             color: white;
         }

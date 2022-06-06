@@ -5,7 +5,8 @@
                 <li v-for="(comic, index) in comics" :key="index">
                     <CardElement :img="comic.thumb" :series="comic.series"/>
                 </li>
-            </ul>      
+            </ul>   
+            <button class="main-btn"><h3>LOAD MORE</h3></button>   
         </div>
     </main>
 </template>
@@ -103,10 +104,29 @@ export default {
        background-color: var(--secondary-color);
         display: flex;
         color: white;
-        .comics-list{
+        padding: 60px 0;
+       .comics-list{
             list-style: none;
             display: flex;
             flex-wrap: wrap;
+            li{
+                width: calc(100% / 6 - 20px );
+                margin: 0 10px;
+            } 
+        }
+        .main-btn{
+            padding: 10px 40px;
+            color: white;
+            background-color: var(--primary-color);
+            border-style: none;
+            margin-left: 45%;
+            margin-top: 70px;
+            transition: all;
+        }   
+        .main-btn:hover{
+            cursor: pointer;
+            background-color: white;
+            color: var(--secondary-color);
         }
     }
 </style>

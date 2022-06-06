@@ -1,9 +1,9 @@
 <template>
     <main>
         <div class="container">
-            <ul>
+            <ul class="comics-list">
                 <li v-for="(comic, index) in comics" :key="index">
-                    <CardElement :img="comics.thumb" :series="comics.series"/>
+                    <CardElement :img="comic.thumb" :series="comic.series"/>
                 </li>
             </ul>      
         </div>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import CardElement from '../BaseMain/CardElement.vue'
+import CardElement from './CardElement.vue'
 export default {
     name: 'BaseMain' ,
     components: {
@@ -101,7 +101,12 @@ export default {
 <style lang="scss" scoped>
     main{
        background-color: var(--secondary-color);
-        height: 20rem;
+        display: flex;
         color: white;
+        .comics-list{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 </style>

@@ -28,14 +28,13 @@ export default {
 
     .footer-ul{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         list-style: none;
         text-transform: uppercase;  
-        
     }
     .footer-ul li{
-        align-items: center;
+       align-items: center;
         gap: 3.5rem;
     }
     .footer-ul a{

@@ -9,7 +9,7 @@
             <nav>   
                 <ul>
                     <li><a href="#">Characters</a></li>
-                    <li class="active"><a href="#">Comics</a></li>
+                    <li ><a href="#" class="active">Comics</a></li>
                     <li><a href="#">Movies</a></li>
                     <li><a href="#">TV</a></li>
                     <li><a href="#">Games</a></li>
@@ -37,13 +37,18 @@ export default {
         align-items: center;
         padding: 2.5rem 0;
         &-right {
-            font-weight: 700;
+            font-weight: bold;
         } ul{
             display: flex;
             list-style: none;
             gap: 1.5rem;
         }a{
             text-decoration: none;
+            text-transform: uppercase;
         }
+    }
+    .active{
+        color: #0282f9;
+        // border-bottom: 3px solid #0282f9;
     }
 </style>

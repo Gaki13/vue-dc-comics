@@ -50,5 +50,11 @@ export default {
     background-color: inherit;
     border: 3px solid #0282f9;
     color: white;
-}
+    transition: background-color;
+    }
+
+    .sign-up-btn:hover{
+        background-color: #0282f9;
+        cursor: pointer;
+    }
 </style>
